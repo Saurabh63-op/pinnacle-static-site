@@ -13,11 +13,3 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   items.forEach((el) => io.observe(el));
 });
-
-// Mobile nav toggle
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("menu-toggle");
-  const menu = document.getElementById("mobile-menu");
-  if (!btn || !menu) return;
-  btn.addEventListener("click", () => menu.classList.toggle("hidden"));
-});
